@@ -1,0 +1,200 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+* {
+  outline: none;
+}
+
+.main-wrapper {
+  padding-bottom: 50px;
+}
+
+.max-width-container {
+  max-width: 87%;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid #ededed;
+  height: 120px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.logo-anchor {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-green {
+  width: 100%;
+  max-width: 152px;
+  min-width: 152px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  color: #000000;
+  justify-content: center;
+}
+
+.content-section {
+  display: flex;
+  margin-top: 30px;
+}
+
+.left-section {
+  width: 58%;
+  margin-right: 115px;
+}
+
+.right-section {
+  width: 40%;
+}
+
+.dealership-table {
+  margin-top: 17px;
+}
+
+.col-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.dealership-table th {
+  font-family: InterBold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4d515b;
+}
+
+.pricing-icons {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.button-div .submit-btn {
+  border-radius: 30px;
+  background-color: #05deba;
+  padding: 14px 32px;
+  font-family: InterSemiBold;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  color: #15161f;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.button-div .submit-btn.not-active {
+  background-color: #4d515b;
+  color: #818389;
+}
+
+.button-div .submit-btn img {
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.left-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-cta-container a,
+.back-cta-container a:hover {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #15161f;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.go-back-cta {
+  margin-right: 12px;
+  width: 22px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-input {
+  width: 337px;
+  height: 40px;
+  padding: 9.7px 14.7px 9.7px 20px;
+  border-radius: 40px;
+  border: solid 1px #d2d2d2;
+  background-color: #ffffff;
+}
+
+.search-icon-button {
+  position: absolute;
+  right: 8px;
+  top: 25%;
+  background: none;
+  border: none;
+}
+
+.search-icon {
+  width: 22px;
+  height: 20px;
+}
+
+thead {
+  padding: 12px 60.8px 12px 16px;
+  background-color: #f7f7f7;
+}
+
+.table > tbody > tr {
+  border-bottom: 1px solid #ededed;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > td {
+  border: 0 !important;
+  padding: 12px 8px 8px !important;
+}

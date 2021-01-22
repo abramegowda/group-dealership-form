@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../font.css" />
+  <link rel="stylesheet" type="text/css" href="../common.css" />
+  <link rel="stylesheet" type="text/css" href="choose-implementation.css" />
+  <link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src="calendar/bootstrap-datepicker.js"></script>
+  <link rel="stylesheet" href="calendar/datepicker.css" type="text/css" />
+  <script type="text/javascript" src='choose-implementation.js'></script>
+  <title>Welcome</title>
+</head>
+
+<body>
+  <section class="main-wrapper">
+    <section class="header-wrapper">
+      <div class="max-width-container header-container">
+        <a href=# class="logo-anchor">
+          <img class="logo-green" src="../images/logo-green.png" alt="tekion logo" />
+        </a>
+
+        <div class="title">
+          <img class="pricing-icons" src="choose-implementation-images/date-range.png" />Choose Implementation Month
+        </div>
+      </div>
+    </section>
+
+    <section class="max-width-container content-section">
+      <div class="left-section">
+        <div class="left-header">
+          <div class="back-cta-container">
+            <a href="javascript:history.go(-1)"><img src="../images/arrow-right.png" class="go-back-cta"
+                alt="go-back-img" />Go
+              back</a>
+          </div>
+
+          <div class="search-bar">
+            <input type='text' class="search-input" placeholder="Search">
+            <button class="search-icon-button">
+              <img src="../images/search-icon.png" class="search-icon" alt="search-icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="dealership-table">
+          <table class="table table-responsive table-hover">
+            <thead>
+              <tr>
+                <th><input id="selectAll" class="checkbox" type="checkbox" name="selectAll"></th>
+                <th><img src='choose-implementation-images/dealership.png' class="col-icon">Dealership Name</th>
+                <th><img src='choose-implementation-images/calendar.png' class="col-icon">OEM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td><input id='check1' class="checkbox" type="checkbox" name="checkbox1"></td>
+                <td>Country II</td>
+                <td>
+                  <span>March 2021</span>
+                  <button data-for="check1" class="edit-button"><img
+                      src='choose-implementation-images/edit.svg' /></button>
+                  <button data-for="check1" class="clear-date"><img
+                      src='choose-implementation-images/reset-date.svg' /></button>
+                </td>
+              </tr>
+              <tr>
+                <td><input id='check2' class="checkbox" type="checkbox" name="checkbox1"></td>
+                <td>Frank Leta Acura Demo</td>
+                <td><button data-for="check2" class="select-date-text">Select Date</button></td>
+              </tr>-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <button class="reset"><img class="reset-icon" src="choose-implementation-images/reset.png">Reset</button>
+        <input id='calendar-input'>
+        <div class="box"></div>
+      </div>
+    </section>
+    <div class="max-width-container" style="display:flex;justify-content: flex-end">
+      <div class="button-div">
+        <form action="" method="get">
+          <button class="submit-btn" type="submit">
+            Submit
+            <img src="../images/arrow-right.png" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

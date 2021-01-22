@@ -1,0 +1,246 @@
+tbody > tr > td:nth-child(2) {
+  font-family: InterBold;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.checkbox {
+  width: 24px;
+  height: 18px;
+}
+
+.edit-button,
+.clear-date {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.edit-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.clear-date img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.select-date-text {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #18a0fb;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.dealership-table {
+  max-height: 550px;
+  min-height: 550px;
+  overflow: auto;
+}
+
+.content-section {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  max-width: 50%;
+}
+
+#calendar-input {
+  display: none;
+}
+
+.datepicker:after,
+.datepicker:before {
+  display: none !important;
+}
+
+.datepicker.dropdown-menu {
+  display: block !important;
+  position: relative;
+  min-width: 540px;
+  max-width: 540px;
+  padding: 0;
+  box-shadow: initial;
+}
+
+.datepicker.dropdown-menu table td {
+  padding: 0;
+}
+
+.datepicker.dropdown-menu table td span.month {
+  margin: 0;
+  min-width: 33.3%;
+  font-family: InterSemiBold;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #4d515b !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-radius: 0;
+}
+
+.datepicker.dropdown-menu table td span.month:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+.datepicker.dropdown-menu table td span.month:nth-child(3n) {
+  border-right: 0;
+}
+
+.datepicker.dropdown-menu table td span.year {
+  margin: 0;
+  min-width: 33.3%;
+  font-family: InterSemiBold;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #4d515b !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-radius: 0;
+}
+
+.datepicker.dropdown-menu table td span.year:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+.datepicker.dropdown-menu table td span.year:nth-child(3n) {
+  border-right: 0;
+}
+
+.datepicker th.switch {
+  width: initial !important;
+  font-family: InterSemiBold;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: #2f313c;
+}
+
+.cal-arrow {
+  width: 8px;
+  height: 15px;
+}
+
+/* .cal-arrow.prev {
+  position: absolute;
+  left: 40%;
+  top: 7%;
+}
+
+.cal-arrow.next {
+  position: absolute;
+  right: 40%;
+  top: 7%;
+} */
+
+.table-condensed > thead > tr > th {
+  padding: 15px !important;
+}
+
+.table-condensed > thead > tr {
+  position: relative;
+}
+
+.datepicker thead tr:first-child th:hover {
+  background: none !important;
+}
+
+thead {
+  background-color: #ffffff;
+  border-bottom: 0.5px solid #d2d2d2;
+}
+
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+  /* background-color: #e6f2ff; */
+  background: none !important;
+  background-color: #e6f2ff !important;
+  text-shadow: none !important;
+}
+
+.reset {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #18a0fb;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  margin-right: 53px;
+  width: 87%;
+  padding: 0;
+}
+
+.reset[disabled] {
+  color: #d2d2d2;
+}
+
+.reset[disabled] img {
+  filter: grayscale(100%);
+}
+
+.reset-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+}
+
+.box {
+  width: 87%;
+  height: 89%;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  opacity: 0.8;
+  z-index: 9;
+  background-color: #fafafa;
+  cursor: not-allowed;
+}
+
+.mask-calendar {
+  z-index: -1 !important;
+}

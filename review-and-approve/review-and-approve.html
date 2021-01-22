@@ -1,0 +1,615 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../font.css" />
+  <link rel="stylesheet" type="text/css" href="../common.css" />
+  <link rel="stylesheet" type="text/css" href="review-and-approve.css" />
+  <link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src='review-and-approve.js'></script>
+  <title>Welcome</title>
+</head>
+
+<body>
+  <section class="main-wrapper">
+    <section class="header-wrapper">
+      <div class="max-width-container header-container">
+        <a href=# class="logo-anchor">
+          <img class="logo-green" src="../images/logo-green.png" alt="tekion logo" />
+        </a>
+
+        <div class="title">
+          <img class="pricing-icons" src="review-and-approve-images/order-form.png" />Review & Approve Order Form
+        </div>
+      </div>
+    </section>
+
+    <section class="max-width-container content-section">
+      <div class="left-section">
+        <div class="left-header">
+          <div class="back-cta-container">
+            <a href="javascript:history.go(-1)"><img src="../images/arrow-right.png" class="go-back-cta"
+                alt="go-back-img" />Go
+              back</a>
+          </div>
+
+          <div class="search-bar">
+            <input type='text' class="search-input" placeholder="Search">
+            <button class="search-icon-button">
+              <img src="../images/search-icon.png" class="search-icon" alt="search-icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="dealership-table">
+          <table class="table table-responsive table-hover">
+            <thead>
+              <tr>
+                <th><img src='review-and-approve-images/dealership.png' class="col-icon">Dealership Name</th>
+                <th><img src='review-and-approve-images/oem.png' class="col-icon">OEM</th>
+                <th><img src='review-and-approve-images/user-count.png' class="col-icon">User Count</th>
+                <th><img src='review-and-approve-images/total.png' class="col-icon">Total Monthly</th>
+                <th><img src='review-and-approve-images/total.png' class="col-icon">Total Upfront</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="clickable" data-toggle="collapse" id="row1" data-target=".row1"
+                onclick="handleActive(event, 'row1')">
+                <td>Country II</td>
+                <td>GM, Toyota</td>
+                <td>45</td>
+                <td>$690</td>
+                <td>$31800</td>
+                <td class="td-button"><button class="tr-btn"><img src='review-and-approve-images/open.svg'
+                      class="blue show" /> <img src='review-and-approve-images/close.svg' class="pink hide" /></button>
+                </td>
+              </tr>
+              <tr class="collapse row1" style="background-color: #f7f7f7;">
+                <td colspan="6" class="tdPadding">
+                  <div class="pricing-list">
+                    <div>
+                      <div class="list-header-main">
+                        GM
+                        <button class="expand-button" onclick="expandItemOem(event, 'oem1')">
+                          <img class="expand-icon-main" src="review-and-approve-images/expand2.svg" /></button>
+                      </div>
+                      <div id="oem1" class="expandable-content" style="display: none;">
+                        <div class="invoice-set-one">
+                          <div class="item-list">
+                            <div>
+                              <div class="expandable-header">
+                                <p>Core Platform/ mo</p>
+                                <span>$6,000<button class="expand-button" onclick="expandItem(event, 'expand1')">
+                                    <img class="expand-icon"
+                                      src="review-and-approve-images/expand.png" /></button></span>
+                              </div>
+                              <div id="expand1" class="expandable-content" style="display: none;">
+                                <div class="item-sub-list">
+                                  <p>
+                                    Finance & Insurance Menus and Reporting<abbr>(per month)</abbr>
+                                  </p>
+                                  <span>$490</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Digital Signage<abbr>($50 per display X3, per month)</abbr>
+                                  </p>
+                                  <span>$150</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Recognition<abbr>RFID - $125 per lane X1, per month)</abbr>
+                                  </p>
+                                  <span>$125</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Connectivity<abbr>(OBD II - $20 per device X50, per month)</abbr>
+                                  </p>
+                                  <span>$1,000</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="expandable-header">
+                                <p>Select Features (ARC) /mo</p>
+                                <span>$7,255<button class="expand-button" onclick="expandItem(event, 'expand2')">
+                                    <img class="expand-icon"
+                                      src="review-and-approve-images/expand.png" /></button></span>
+                              </div>
+                              <div id="expand2" class="expandable-content" style="display: none;">
+                                <div class="item-sub-list">
+                                  <p>
+                                    Finance & Insurance Menus and Reporting<abbr>(per month)</abbr>
+                                  </p>
+                                  <span>$490</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Digital Signage<abbr>($50 per display X3, per month)</abbr>
+                                  </p>
+                                  <span>$150</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Recognition<abbr>RFID - $125 per lane X1, per month)</abbr>
+                                  </p>
+                                  <span>$125</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Connectivity<abbr>(OBD II - $20 per device X50, per month)</abbr>
+                                  </p>
+                                  <span>$1,000</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-total">
+                            <div>
+                              <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Monthly
+                                Subscription
+                              </p>
+                              <span>$7,255</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="invoice-set-two">
+                          <div class="item-list">
+                            <div>
+                              <div style="display: inline-block;">
+                                <p
+                                  style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                  RFID Tags</p>
+                                <p
+                                  style="display: block; width: 100%; margin: 0; font-style: normal; font-size: 10px;margin-top: 2px;">
+                                  (per
+                                  month, unlimited access to all available forms)</p>
+                              </div>
+                              <span>$1,000</span>
+                            </div>
+                            <div>
+                              <div style="display: inline-block;">
+                                <p
+                                  style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c;  font-family: InterBold;">
+                                  Onsite Training</p>
+                                <p
+                                  style="display: block; width: 100%; margin: 0; font-style: normal; font-size: 10px;margin-top: 2px;">
+                                  (X4
+                                  full-day sessions, post implementation, upfront fee)</p>
+                              </div>
+                              <span>$4,800</span>
+                            </div>
+                          </div>
+                          <div class="item-total">
+                            <div>
+                              <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Upfront Fee</p>
+                              <span>$63,655</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="invoice-set-two" style="margin-bottom: 7.5px;">
+                          <div class="item-list">
+                            <div>
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                Implementation Fee</p>
+                              <span>$45,600</span>
+                            </div>
+                            <div>
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                GM EBE Credit</p>
+                              <span style="color: #ff2222">-$45,600</span>
+                            </div>
+                          </div>
+                          <div class="item-total">
+                            <div>
+                              <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Implementation
+                                Fee
+                              </p>
+                              <span>$0</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <span>*Above pricing is exclusive to GM dealers only</span>
+                          <div style="margin-top: 48px; display: flex; align-items: center;">
+                            <img src='review-and-approve-images/alert-circle.png' class='alert-icon' />
+                            <p>36 months subscription which automatically renews on a month-to- month basis.</br>
+                              A 30-day cancelations notice is required to terminate the partnership at any time.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="list-header-main">
+                        Toyota
+                        <button class="expand-button" onclick="expandItemOem(event, 'oem2')">
+                          <img class="expand-icon-main" src="review-and-approve-images/expand2.svg" /></button>
+                      </div>
+                      <div id="oem2" class="expandable-content" style="display: none;">
+                        <div class="invoice-set-one">
+                          <div class="item-list">
+                            <div>
+                              <div class="expandable-header">
+                                <p>Core Platform/ mo</p>
+                                <span>$6,000<button class="expand-button" onclick="expandItem(event, 'expand3')">
+                                    <img class="expand-icon" src="review-and-approve-images/expand.png" /></button></span>
+                              </div>
+                              <div id="expand3" class="expandable-content" style="display: none;">
+                                <div class="item-sub-list">
+                                  <p>
+                                    Finance & Insurance Menus and Reporting<abbr>(per month)</abbr>
+                                  </p>
+                                  <span>$490</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Digital Signage<abbr>($50 per display X3, per month)</abbr>
+                                  </p>
+                                  <span>$150</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Recognition<abbr>RFID - $125 per lane X1, per month)</abbr>
+                                  </p>
+                                  <span>$125</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Connectivity<abbr>(OBD II - $20 per device X50, per month)</abbr>
+                                  </p>
+                                  <span>$1,000</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="expandable-header">
+                                <p>Select Features (ARC) /mo</p>
+                                <span>$7,255<button class="expand-button" onclick="expandItem(event, 'expand4')">
+                                    <img class="expand-icon" src="review-and-approve-images/expand.png" /></button></span>
+                              </div>
+                              <div id="expand4" class="expandable-content" style="display: none;">
+                                <div class="item-sub-list">
+                                  <p>
+                                    Finance & Insurance Menus and Reporting<abbr>(per month)</abbr>
+                                  </p>
+                                  <span>$490</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Digital Signage<abbr>($50 per display X3, per month)</abbr>
+                                  </p>
+                                  <span>$150</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Recognition<abbr>RFID - $125 per lane X1, per month)</abbr>
+                                  </p>
+                                  <span>$125</span>
+                                </div>
+                                <div class="item-sub-list">
+                                  <p>
+                                    Vehicle Connectivity<abbr>(OBD II - $20 per device X50, per month)</abbr>
+                                  </p>
+                                  <span>$1,000</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-total">
+                            <div>
+                              <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Monthly
+                                Subscription
+                              </p>
+                              <span>$7,255</span>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="invoice-set-two">
+                          <div class="item-list">
+                            <div>
+                              <div style="display: inline-block;">
+                                <p
+                                  style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                  RFID Tags</p>
+                                <p style="display: block; width: 100%; margin: 0; font-style: normal; font-size: 10px;margin-top: 2px;">
+                                  (per
+                                  month, unlimited access to all available forms)</p>
+                              </div>
+                              <span>$1,000</span>
+                            </div>
+                            <div>
+                              <div style="display: inline-block;">
+                                <p
+                                  style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c;  font-family: InterBold;">
+                                  Onsite Training</p>
+                                <p style="display: block; width: 100%; margin: 0; font-style: normal; font-size: 10px;margin-top: 2px;">
+                                  (X4
+                                  full-day sessions, post implementation, upfront fee)</p>
+                              </div>
+                              <span>$4,800</span>
+                            </div>
+                          </div>
+                          <div class="item-total">
+                            <div>
+                              <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Upfront Fee</p>
+                              <span>$63,655</span>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="invoice-set-two" style="margin-bottom: 7.5px;">
+                          <div class="item-list">
+                            <div>
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                Implementation Fee</p>
+                              <span>$45,600</span>
+                            </div>
+                            <div>
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                GM EBE Credit</p>
+                              <span style="color: #ff2222">-$45,600</span>
+                            </div>
+                          </div>
+                          <div class="item-total">
+                            <div>
+                              <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Implementation
+                                Fee
+                              </p>
+                              <span>$0</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <span>*Above pricing is exclusive to GM dealers only</span>
+                          <div style="margin-top: 48px; display: flex; align-items: center;">
+                            <img src='review-and-approve-images/alert-circle.png' class='alert-icon' />
+                            <p>36 months subscription which automatically renews on a month-to- month basis.</br>
+                              A 30-day cancelations notice is required to terminate the partnership at any time.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="clickable" data-toggle="collapse" id="row2" data-target=".row2"
+                onclick="handleActive(event, 'row2')">
+                <td>Frank Leta Acura Demo</td>
+                <td>Honda</td>
+                <td>45</td>
+                <td>$0</td>
+                <td>$4800</td>
+                <td class="td-button"><button class="tr-btn"><img src='review-and-approve-images/open.svg'
+                      class="blue show" /><img src='review-and-approve-images/close.svg' class="pink hide" /></button>
+                </td>
+              </tr>
+              <tr class="collapse row2" style="background-color: #f7f7f7;">
+                <td colspan="6" class="tdPadding">
+                  <div class="pricing-list">
+                    <div class="list-header-main">
+                      Honda
+                      <button class="expand-button" onclick="expandItemOem(event, 'oem3')">
+                        <img class="expand-icon-main" src="review-and-approve-images/expand2.svg" /></button>
+                    </div>
+                    <div id="oem3" class="expandable-content" style="display: none;">
+                      <div class="invoice-set-one">
+                        <div class="item-list">
+                          <div>
+                            <div class="expandable-header">
+                              <p>Core Platform/ mo</p>
+                              <span>$6,000<button class="expand-button" onclick="expandItem(event, 'expand5')">
+                                  <img class="expand-icon" src="review-and-approve-images/expand.png" /></button></span>
+                            </div>
+                            <div id="expand5" class="expandable-content" style="display: none;">
+                              <div class="item-sub-list">
+                                <p>
+                                  Finance & Insurance Menus and Reporting<abbr>(per month)</abbr>
+                                </p>
+                                <span>$490</span>
+                              </div>
+                              <div class="item-sub-list">
+                                <p>
+                                  Digital Signage<abbr>($50 per display X3, per month)</abbr>
+                                </p>
+                                <span>$150</span>
+                              </div>
+                              <div class="item-sub-list">
+                                <p>
+                                  Vehicle Recognition<abbr>RFID - $125 per lane X1, per month)</abbr>
+                                </p>
+                                <span>$125</span>
+                              </div>
+                              <div class="item-sub-list">
+                                <p>
+                                  Vehicle Connectivity<abbr>(OBD II - $20 per device X50, per month)</abbr>
+                                </p>
+                                <span>$1,000</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="expandable-header">
+                              <p>Select Features (ARC) /mo</p>
+                              <span>$7,255<button class="expand-button" onclick="expandItem(event, 'expand6')">
+                                  <img class="expand-icon" src="review-and-approve-images/expand.png" /></button></span>
+                            </div>
+                            <div id="expand6" class="expandable-content" style="display: none;">
+                              <div class="item-sub-list">
+                                <p>
+                                  Finance & Insurance Menus and Reporting<abbr>(per month)</abbr>
+                                </p>
+                                <span>$490</span>
+                              </div>
+                              <div class="item-sub-list">
+                                <p>
+                                  Digital Signage<abbr>($50 per display X3, per month)</abbr>
+                                </p>
+                                <span>$150</span>
+                              </div>
+                              <div class="item-sub-list">
+                                <p>
+                                  Vehicle Recognition<abbr>RFID - $125 per lane X1, per month)</abbr>
+                                </p>
+                                <span>$125</span>
+                              </div>
+                              <div class="item-sub-list">
+                                <p>
+                                  Vehicle Connectivity<abbr>(OBD II - $20 per device X50, per month)</abbr>
+                                </p>
+                                <span>$1,000</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-total">
+                          <div>
+                            <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Monthly
+                              Subscription
+                            </p>
+                            <span>$7,255</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="invoice-set-two">
+                        <div class="item-list">
+                          <div>
+                            <div style="display: inline-block;">
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                                RFID Tags</p>
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-style: normal; font-size: 10px;margin-top: 2px;">
+                                (per
+                                month, unlimited access to all available forms)</p>
+                            </div>
+                            <span>$1,000</span>
+                          </div>
+                          <div>
+                            <div style="display: inline-block;">
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c;  font-family: InterBold;">
+                                Onsite Training</p>
+                              <p
+                                style="display: block; width: 100%; margin: 0; font-style: normal; font-size: 10px;margin-top: 2px;">
+                                (X4
+                                full-day sessions, post implementation, upfront fee)</p>
+                            </div>
+                            <span>$4,800</span>
+                          </div>
+                        </div>
+                        <div class="item-total">
+                          <div>
+                            <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Upfront Fee</p>
+                            <span>$63,655</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="invoice-set-two" style="margin-bottom: 7.5px;">
+                        <div class="item-list">
+                          <div>
+                            <p
+                              style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                              Implementation Fee</p>
+                            <span>$45,600</span>
+                          </div>
+                          <div>
+                            <p
+                              style="display: block; width: 100%; margin: 0; font-size: 12px; font-weight: bold;color: #2f313c; font-family: InterBold;">
+                              GM EBE Credit</p>
+                            <span style="color: #ff2222">-$45,600</span>
+                          </div>
+                        </div>
+                        <div class="item-total">
+                          <div>
+                            <p style="font-size: 16px; font-family: Inter; font-weight: bold;">Total Implementation Fee
+                            </p>
+                            <span>$0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notes">
+                        <span>*Above pricing is exclusive to GM dealers only</span>
+                        <div style="margin-top: 48px; display: flex; align-items: center;">
+                          <img src='review-and-approve-images/alert-circle.png' class='alert-icon' />
+                          <p>36 months subscription which automatically renews on a month-to- month basis.</br>
+                            A 30-day cancelations notice is required to terminate the partnership at any time.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="right-section">
+        <div class="grey-wrapper">
+          <div>
+            <div class="monthly-total-wrapper">
+              <div class="monthly-total">
+                <p class="total-title">Combined Monthly Total</p>
+                <p class="total-amount">$1, 1440</p>
+              </div>
+              <div class="monthly-breakup">
+                <div class="inner">
+                  <p class="total-subtitle-amount">$1, 1440</p>
+                  <p class="total-subtitle">Monthly</p>
+                </div>
+                <div class="inner">
+                  <p class="total-subtitle-amount">$0</p>
+                  <p class="total-subtitle">Credit</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="monthly-total">
+                <p class="total-title">Combined Upfront Total</p>
+                <p class="total-amount">$1, 1440</p>
+              </div>
+              <div class="monthly-breakup">
+                <div class="inner">
+                  <p class="total-subtitle-amount">$67, 200</p>
+                  <p class="total-subtitle">Monthly</p>
+                </div>
+                <div class="inner">
+                  <p class="total-subtitle-amount">$17, 000</p>
+                  <p class="total-subtitle">Credit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-div">
+            <form action="" method="get">
+              <button class="submit-btn" type="submit">
+                Accept & Continue
+                <img src="../images/arrow-right.png" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>
